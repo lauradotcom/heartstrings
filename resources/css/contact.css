@@ -1,0 +1,30 @@
+.banner {
+    background-image: url("../images/shirt_from_erin.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    width: 100%;
+    /*margin: 20% 10%;*/
+    padding: 5% 0 0 0;
+    background-color: #DDD9FF;
+    opacity: 75%;
+    position: absolute;
+    bottom: 10%;
+  }
+
+.title {
+    color: #280069;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        height: 750px;
+        background-position: top 25% right 10%;
+    }
+}

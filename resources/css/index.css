@@ -1,0 +1,57 @@
+.banner {
+    background-image: url("../images/heartstrings_folk_fest_michael_penn.jpg");
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%; 
+    padding: 5% 0;
+    color: #FFF;
+    position: relative;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .quote {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    /*z-index: 1;*/
+  }
+
+  .quote span {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-top: 5%;
+  }
+  
+ .mission {
+    padding: 5%; 
+    background-color: #DDD9FF;
+     color: #280069;
+ }
+
+ /* Desktop Styles */
+
+ @media screen and (min-width: 1024px) {
+  
+  .banner {
+  background-position: center;
+  height: 750px;
+  }
+
+  .mission {
+    padding: 5% 10%;
+  }
+ }

@@ -1,0 +1,320 @@
+html {
+    background: #280069;
+    color: #B6ADFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+/* Universal Text Styles */
+
+h1 {
+    font-family: 'Tinos', serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5%;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #B6ADFF;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5%;
+}
+
+p {
+    margin: 1%;
+    padding: 2%;
+    line-height: 1.3rem;
+
+}
+
+p a:hover {
+    color: #A91FB5;
+}
+
+p a:active {
+    color: #AB1D78;
+}
+
+ul {
+  list-style: disc;
+  line-height: 1.5rem;
+  padding: 2%;
+}
+
+li {
+    padding: 1%;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #280069;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 1% 1% 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #B6ADFF;
+}
+
+li a:hover {
+    color: #A91FB5;
+}
+
+li a:active {
+    color: #AB1D78;
+}
+
+.activepage {
+    color: #A91FB5;
+}
+
+/* Images */
+
+figure {
+    width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* UI Elements */
+
+.button {
+    background: linear-gradient(70deg, #73229E, #A91Fb5);
+    color: #FFF;
+    width: 10%;
+    height: 5%;
+    padding: 1.5%;
+    margin: 5%;
+    border-radius: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 2;
+}
+
+i {
+    color: #DDD9FF;
+    padding: 5%;
+    margin: 1%;
+}
+
+input[type="text"], textarea, select, button {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    width: 75%;
+    margin: 2%;
+    padding: 1%;
+    font-size: 1.25rem;
+    font-family: inherit;
+    color: #280069;
+    background-color: #DDD9FF;
+}
+
+input[type="submit"], input[type="submit"]:active {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+input [type="text"] {
+    height: 10%;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 2px solid #AB1D78;
+    outline: #AB1D78;
+}
+
+input:invalid:required {
+    background-color: linear-gradient(to right, #DDD9FF, #ab1d78);
+}
+
+textarea {
+    display: block;
+    overflow: auto;
+}
+
+label {
+    margin-left: 2%;
+}
+
+/* Layouts */
+
+.block {
+    padding: 10% 5%;
+ }
+
+ .block span {
+     font-size: 0.75rem;
+ }
+
+ .dark {
+    background-color: #280069;
+    color: #DDD9FF;
+}
+
+.dark a {
+    color: #DDD9FF;
+}
+
+.light {
+    background-color: #DDD9FF;
+    color: #280069;
+}
+
+.light a {
+    color: #280069;
+}
+
+figcaption {
+    font-weight: 100 italic;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.center {
+        text-align: center;
+}
+
+ /* Footer */
+
+footer {
+    background-color: #140033;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+}
+
+ .icons {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+
+ .logo {
+     width: 25%;
+ }
+
+ .footeritem {
+     padding: 2%;
+ }
+
+ .copyright {
+     text-align: center;
+     width: auto;
+ }
+ 
+ 
+
+ footer span {
+     display: inline-block;
+     font-size: 0.75rem;
+     text-align: center;
+ }
+
+
+/* Tablet Styles */
+
+@media screen and (min-width: 768px) {
+
+    /* Footer */
+
+    footer {
+        background-color: #140033;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5%;
+    }
+    
+     .icons {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1%;
+    }
+    
+
+    .footeritem {
+        width: 33%;
+        text-align: center;
+     }
+
+}
+
+/* Desktop Styles */
+
+@media screen and (min-width: 1024px) {
+    
+    html {
+        font-size: 18px;
+    }
+
+    h1 {
+        padding: 2%;
+    }
+
+    p {
+        padding: 1%;
+    }
+
+    img {
+        width: 100%;
+    }
+ 
+    .button {
+        padding: 1%;
+    }
+
+
+    .block {
+        padding: 5% 20%;    
+    }
+
+
+
+}
