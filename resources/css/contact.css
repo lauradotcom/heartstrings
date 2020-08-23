@@ -34,9 +34,8 @@ input[type="text"], textarea, select, button {
     outline: none;
     box-shadow: none;
     width: 50%;
-    margin: 2%;
     padding: 1%;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: inherit;
     color: #280069;
     background-color: #DDD9FF;
@@ -45,11 +44,28 @@ input[type="text"], textarea, select, button {
 input[type="submit"], input[type="submit"]:active {
     -webkit-appearance: none;
     appearance: none;
-    outline: none;
+    border: 0 none;
+    cursor: pointer;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    min-width: 75px;
+    padding: 1.5%;
+    margin: 5%;
+}
+
+input[type="submit"]:active {
+    border: 1px 
+}
+
+input[type="submit"]:focus {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: 2px #AB1D78 solid;
 }
 
 input [type="text"] {
-    height: 10%;
+    height: 15%
 }
 
 input[type="text"]:focus, textarea:focus {
@@ -62,12 +78,14 @@ input:invalid:required {
 }
 
 textarea {
-   /* display: block; */
     overflow: auto;
 }
 
 label {
-    margin-left: 2%;
+    display: block;
+    margin: 5% 0 0 2%;
+    font-size: 1.15rem;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 1024px) {
@@ -77,6 +95,16 @@ label {
     }
 
     /* Form */
+    input[type="text"], textarea, select, button {
+        width: 40%;
+    }
 
+    label {
+        margin-top: 2%;
+    }
+
+    input[type="submit"], input[type="submit"]:active {
+        padding: 1%;
+    }
 
 }
