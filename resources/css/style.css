@@ -121,8 +121,16 @@ img {
     border-radius: 0;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     z-index: 2;
+}
+
+.button:hover {
+    background: linear-gradient(70deg, #A91Fb5, #AB1D78);
+}
+
+.button:active {
+    border: 2px #AB1D78 solid;
 }
 
 i {
