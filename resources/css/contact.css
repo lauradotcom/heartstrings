@@ -1,3 +1,7 @@
+html {
+    text-align: center;
+}
+
 .banner {
     background-image: url("../images/shirt_from_erin.jpg");
     background-size: cover;
@@ -29,7 +33,7 @@ input[type="text"], textarea, select, button {
     appearance: none;
     outline: none;
     box-shadow: none;
-    width: 75%;
+    width: 50%;
     margin: 2%;
     padding: 1%;
     font-size: 1.25rem;
@@ -58,7 +62,7 @@ input:invalid:required {
 }
 
 textarea {
-    display: block;
+   /* display: block; */
     overflow: auto;
 }
 
@@ -71,4 +75,8 @@ label {
         height: 750px;
         background-position: top 25% right 10%;
     }
+
+    /* Form */
+
+
 }
