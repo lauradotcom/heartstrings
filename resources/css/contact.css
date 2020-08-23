@@ -22,6 +22,50 @@
     color: #280069;
 }
 
+/* Form */
+
+input[type="text"], textarea, select, button {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    width: 75%;
+    margin: 2%;
+    padding: 1%;
+    font-size: 1.25rem;
+    font-family: inherit;
+    color: #280069;
+    background-color: #DDD9FF;
+}
+
+input[type="submit"], input[type="submit"]:active {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+input [type="text"] {
+    height: 10%;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 2px solid #AB1D78;
+    outline: #AB1D78;
+}
+
+input:invalid:required {
+    background-color: linear-gradient(to right, #DDD9FF, #ab1d78);
+}
+
+textarea {
+    display: block;
+    overflow: auto;
+}
+
+label {
+    margin-left: 2%;
+}
+
 @media screen and (min-width: 1024px) {
     .banner {
         height: 750px;
