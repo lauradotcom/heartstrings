@@ -1,0 +1,114 @@
+// Buttons Mobile-First
+
+.button {
+  background: linear-gradient(70deg, #73229E, $accent-regular);
+  color: #FFF;
+  width: 10%;
+  height: 5%;
+  padding: 1.5%;
+  margin: 5%;
+  border-radius: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 2;
+  &:hover {
+    background: linear-gradient(70deg, $accent-regular, $accent-bright);
+  }
+  &:active {
+    border: 2px $accent-bright solid;
+  }
+}
+
+// Buttons Desktop
+  .button {
+    padding: 1%;
+  }
+
+// Form Mobile-First
+
+input[type="text"], textarea, select, button {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  width: 50%;
+  padding: 1%;
+  font-size: 1rem;
+  font-family: inherit;
+  color: $primary-medium;
+  background-color: $primary-lightest;
+}
+
+input[type="submit"], input[type="submit"]:active {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0 none;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  min-width: 75px;
+  padding: 1.5%;
+  margin: 5%;
+}
+
+input[type="submit"]:active {
+  border: 1px 
+}
+
+input[type="submit"]:focus {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 2px $accent-bright solid;
+}
+
+input [type="text"] {
+  height: 15%
+}
+
+input[type="text"]:focus, textarea:focus {
+  border: 2px solid $accent-bright;
+  outline: $accent-bright;
+}
+
+input:invalid:required {
+  background-color: linear-gradient(to right, $primary-lightest, $accent-bright);
+}
+
+textarea {
+  overflow: auto;
+}
+
+label {
+  display: block;
+  margin: 5% 0 0 2%;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+// Form Desktop
+
+@media screen and (min-width: 1024px) {
+
+  input[type="text"], textarea, select, button {
+      width: 40%;
+  }
+
+  label {
+      margin-top: 2%;
+  }
+
+  input[type="submit"], input[type="submit"]:active {
+      padding: 1%;
+  }
+
+}
+
+// Icons Mobile-First
+
+i {
+  color: $primary-lightest;
+  padding: 5%;
+  margin: 1%;
+}

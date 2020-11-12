@@ -1,0 +1,330 @@
+html {
+  background: $primary-medium;
+  color: $primary-light;
+  font-family: $font-stack-body;
+  font-size: 16px;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+// Global Text Styles Mobile-First
+
+h1 {
+  font-family: font-stack-headings;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+  a {
+    text-decoration: none;
+    color: $primary-light;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 5%;
+}
+
+p {
+  margin: 1%;
+  padding: 2%;
+  line-height: 1.3rem;
+  a {
+    &:hover {
+      color: $accent-regular;
+    }
+    &:active {
+      color: $accent-bright;
+    }
+  }
+}
+
+ul {
+list-style: disc;
+line-height: 1.5rem;
+padding: 2%;
+}
+
+li {
+  padding: 1%;
+}
+
+// Global Text Styles Desktop
+
+@media screen and (min-width: 1024px) {
+  
+  html {
+      font-size: 18px;
+  }
+
+  h1 {
+      padding: 2%;
+  }
+
+  p {
+      padding: 1%;
+  }
+}
+
+// Navigation
+
+nav {
+  background-color: $primary-medium;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1%;
+  li {
+    display: inline-block;
+    padding: 0 1% 1% 0;
+    a {
+      text-decoration: none;
+      color: $primary-light;
+      &:hover {
+        color: $accent-regular;
+      }
+      &:active {
+        color: $accent-bright;
+      }
+    }
+  }
+}
+
+.activepage {
+  color: $accent-regular;
+}
+
+// Banners Mobile-first
+
+.banner {
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+.hero-content-home {
+  width: 100%; 
+  padding: 5% 0;
+  color: #FFF;
+  position: relative;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  span {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-top: 5%;
+  }
+}
+
+.hero-content {
+  width: 100%;
+  padding: 5% 0 0 0;
+  background-color: $primary-lightest;
+  opacity: 75%;
+  position: absolute;
+  bottom: 10%;
+}
+
+.title {
+  color: $primary-medium;
+}
+
+.mission {
+  padding: 5%; 
+  background-color: $primary-lightest;
+   color: $primary-medium;
+}
+
+// Banners Desktop
+
+@media screen and (min-width: 1024px) {
+
+  .banner {
+  background-position: center;
+  height: 750px;
+  }
+
+  .mission {
+    padding: 5% 10%;
+  }
+}
+
+// Banner Images
+
+#banner-home {
+  background-image: url("../images/heartstrings_folk_fest_michael_penn.jpg");
+  background-position: bottom;
+}
+
+#banner-instructor {
+  background-image: url("../images/lisa-mountain.jpg");
+  background-position: top;
+}
+
+#banner-lessons {
+  background-image: url("../images/janes_family_768x1024.jpg");
+  background-position: center;
+}
+
+#banner-suzuki {
+  background-image: url("../images/suzuki-recital.jpg");
+  background-position: center;
+}
+
+#banner-resources {
+  background-image: url("../images/recital-summer.jpg");
+  background-position: center;
+}
+
+#banner-contact {
+  background-image: url("../images/shirt_from_erin.jpg");
+  background-position: center;
+}
+
+// Grid Classes Mobile-First
+
+.block {
+  padding: 10% 5%;
+  span {
+    font-size: 0.75rem;
+  }
+}
+
+.dark {
+  background-color: $primary-medium;
+  color: $primary-lightest;
+  a {
+    color: primary-lightest;
+  }
+}
+
+.light {
+  background-color: $primary-lightest;
+  color: $primary-medium;
+  a {
+    color: $primary-medium;
+  }
+}
+
+figcaption {
+  font-weight: 100 italic;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.center {
+      text-align: center;
+}
+
+// Grid Classes Desktop
+
+.block {
+  padding: 5% 20%;    
+}
+
+// Footer Mobile-First
+
+footer {
+  background-color: $primary-dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5%;
+  span {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-align: center;
+ }
+}
+
+.icons {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+.logo {
+   width: 25%;
+}
+
+.footeritem {
+   padding: 2%;
+}
+
+.copyright {
+   text-align: center;
+   width: auto;
+}
+
+
+// Footer Tablet
+
+@media screen and (min-width: 768px) {
+
+  footer {
+      background-color: $primary-dark;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0.5%;
+  }
+  
+   .icons {
+      list-style: none;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1%;
+  }
+  
+
+  .footeritem {
+      width: 33%;
+      text-align: center;
+   }
+
+}
+
+// Images
+
+figure {
+  width: 100%;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+img {
+  width: 100%;
+}

@@ -1,0 +1,402 @@
+.button {
+  background: linear-gradient(70deg, #73229E, #A91FB5);
+  color: #FFF;
+  width: 10%;
+  height: 5%;
+  padding: 1.5%;
+  margin: 5%;
+  border-radius: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 2;
+}
+.button:hover {
+  background: linear-gradient(70deg, #A91FB5, #AB1D78);
+}
+.button:active {
+  border: 2px #AB1D78 solid;
+}
+
+.button {
+  padding: 1%;
+}
+
+input[type=text], textarea, select, button {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  width: 50%;
+  padding: 1%;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #280069;
+  background-color: #DDD9FF;
+}
+
+input[type=submit], input[type=submit]:active {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0 none;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  min-width: 75px;
+  padding: 1.5%;
+  margin: 5%;
+}
+
+input[type=submit]:active {
+  border: 1px;
+}
+
+input[type=submit]:focus {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 2px #AB1D78 solid;
+}
+
+input [type=text] {
+  height: 15%;
+}
+
+input[type=text]:focus, textarea:focus {
+  border: 2px solid #AB1D78;
+  outline: #AB1D78;
+}
+
+input:invalid:required {
+  background-color: linear-gradient(to right, #DDD9FF, #AB1D78);
+}
+
+textarea {
+  overflow: auto;
+}
+
+label {
+  display: block;
+  margin: 5% 0 0 2%;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+  input[type=text], textarea, select, button {
+    width: 40%;
+  }
+
+  label {
+    margin-top: 2%;
+  }
+
+  input[type=submit], input[type=submit]:active {
+    padding: 1%;
+  }
+}
+i {
+  color: #DDD9FF;
+  padding: 5%;
+  margin: 1%;
+}
+
+html {
+  background: #280069;
+  color: #B6ADFF;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  font-family: font-stack-headings;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+}
+h1 a {
+  text-decoration: none;
+  color: #B6ADFF;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 5%;
+}
+
+p {
+  margin: 1%;
+  padding: 2%;
+  line-height: 1.3rem;
+}
+p a:hover {
+  color: #A91FB5;
+}
+p a:active {
+  color: #AB1D78;
+}
+
+ul {
+  list-style: disc;
+  line-height: 1.5rem;
+  padding: 2%;
+}
+
+li {
+  padding: 1%;
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+
+  h1 {
+    padding: 2%;
+  }
+
+  p {
+    padding: 1%;
+  }
+}
+nav {
+  background-color: #280069;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1%;
+}
+nav li {
+  display: inline-block;
+  padding: 0 1% 1% 0;
+}
+nav li a {
+  text-decoration: none;
+  color: #B6ADFF;
+}
+nav li a:hover {
+  color: #A91FB5;
+}
+nav li a:active {
+  color: #AB1D78;
+}
+
+.activepage {
+  color: #A91FB5;
+}
+
+.banner {
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+.hero-content-home {
+  width: 100%;
+  padding: 5% 0;
+  color: #FFF;
+  position: relative;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.quote span {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 5%;
+}
+
+.hero-content {
+  width: 100%;
+  padding: 5% 0 0 0;
+  background-color: #DDD9FF;
+  opacity: 75%;
+  position: absolute;
+  bottom: 10%;
+}
+
+.title {
+  color: #280069;
+}
+
+.mission {
+  padding: 5%;
+  background-color: #DDD9FF;
+  color: #280069;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    background-position: center;
+    height: 750px;
+  }
+
+  .mission {
+    padding: 5% 10%;
+  }
+}
+#banner-home {
+  background-image: url("../images/heartstrings_folk_fest_michael_penn.jpg");
+  background-position: bottom;
+}
+
+#banner-instructor {
+  background-image: url("../images/lisa-mountain.jpg");
+  background-position: top;
+}
+
+#banner-lessons {
+  background-image: url("../images/janes_family_768x1024.jpg");
+  background-position: center;
+}
+
+#banner-suzuki {
+  background-image: url("../images/suzuki-recital.jpg");
+  background-position: center;
+}
+
+#banner-resources {
+  background-image: url("../images/recital-summer.jpg");
+  background-position: center;
+}
+
+#banner-contact {
+  background-image: url("../images/shirt_from_erin.jpg");
+  background-position: center;
+}
+
+.block {
+  padding: 10% 5%;
+}
+.block span {
+  font-size: 0.75rem;
+}
+
+.dark {
+  background-color: #280069;
+  color: #DDD9FF;
+}
+.dark a {
+  color: primary-lightest;
+}
+
+.light {
+  background-color: #DDD9FF;
+  color: #280069;
+}
+.light a {
+  color: #280069;
+}
+
+figcaption {
+  font-weight: 100 italic;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.block {
+  padding: 5% 20%;
+}
+
+footer {
+  background-color: #140033;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5%;
+}
+footer span {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.icons {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+.logo {
+  width: 25%;
+}
+
+.footeritem {
+  padding: 2%;
+}
+
+.copyright {
+  text-align: center;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: #140033;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5%;
+  }
+
+  .icons {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+  }
+
+  .footeritem {
+    width: 33%;
+    text-align: center;
+  }
+}
+figure {
+  width: 100%;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
