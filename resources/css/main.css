@@ -246,6 +246,15 @@ nav li a:active {
   color: #280069;
 }
 
+.subtitle {
+  color: #280069;
+  background-color: #DDD9FF;
+  opacity: 80%;
+  position: absolute;
+  bottom: 20%;
+  padding: 2% 0;
+}
+
 .mission {
   padding: 5%;
   background-color: #DDD9FF;
@@ -325,10 +334,11 @@ figcaption {
   text-align: center;
 }
 
-.block {
-  padding: 5% 20%;
+@media screen and (min-width: 1024px) {
+  .block {
+    padding: 5% 20%;
+  }
 }
-
 /* since it stacks automatically, not defining a grid for mobile or tablet */
 @media screen and (min-width: 1024px) {
   #banner-instructor, #banner-suzuki {
@@ -386,10 +396,11 @@ figcaption {
     align-self: stretch;
   }
 }
+/*
 .block {
   padding: 5% 2.5%;
 }
-
+*/
 @media screen and (min-width: 1024px) {
   #suzuki {
     display: grid;
@@ -443,6 +454,63 @@ figcaption {
     grid-area: more;
     align-self: stretch;
     text-align: center;
+  }
+}
+.tips {
+  background-image: url("../images/allieonlineviolin_1024x768.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  #lessons {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "banner banner" "wide1 wide1" "wide2 wide2" "wide3 wide3" "wide4 wide4" "photo photo" "left right";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 750px, repeat(4, 500px), 600px, repeat(2, 500px);
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: center;
+    grid-auto-flow: row;
+  }
+  #lessons section {
+    display: grid;
+    align-content: center;
+  }
+  #lessons .banner {
+    height: 750px;
+    background-position: top 25% right 10%;
+    grid-area: banner;
+  }
+  #lessons .text-1 {
+    grid-area: wide1;
+  }
+  #lessons .text-2 {
+    grid-area: wide2;
+  }
+  #lessons .text-3 {
+    grid-area: wide3;
+  }
+  #lessons .text-4 {
+    grid-area: wide4;
+  }
+  #lessons .photo {
+    grid-area: photo;
+  }
+  #lessons .tips {
+    height: 600px;
+  }
+  #lessons .online-lessons {
+    grid-area: left;
+  }
+  #lessons .studio-lessons {
+    grid-area: right;
   }
 }
 footer {
