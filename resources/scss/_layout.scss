@@ -216,7 +216,7 @@ nav {
   background-position: center;
 }
 
-// Grid Classes Mobile-First
+// Global Grid Classes Mobile-First
 
 .block {
   padding: 10% 5%;
@@ -252,7 +252,7 @@ figcaption {
 }
 
 
-// Grid Classes Desktop
+// Global Grid Classes Desktop
 
 @media screen and (min-width: 1024px) {
   .block {
@@ -260,11 +260,11 @@ figcaption {
   }
 }
 
-// Grid Instructor Page Mobile-First
+// Instructor Page Mobile-First
 
 /* since it stacks automatically, not defining a grid for mobile or tablet */
 
-// Grid Instructor Page Desktop
+// Instructor Page Desktop
 
 @media screen and (min-width: 1024px) {
 
@@ -341,7 +341,7 @@ figcaption {
   }
 }
 
-// Grid Suzuki Page Mobile-First
+// Suzuki Page Mobile-First
 
 /*
 .block {
@@ -349,7 +349,7 @@ figcaption {
 }
 */
 
-// Grid Suzuki Page Desktop
+// Suzuki Page Desktop
 
 @media screen and (min-width: 1024px) {
   
@@ -422,7 +422,7 @@ figcaption {
   }      
 }
 
-// Grid Lessons Page Mobile-First
+// Lessons Page Mobile-First
 
 .tips {
   background-image: url("../images/allieonlineviolin_1024x768.jpg");
@@ -434,7 +434,7 @@ figcaption {
   position: relative;
 }
 
-// Grid Lessons Page Desktop
+// Lessons Page Desktop
 
 @media screen and (min-width: 1024px) {
   
@@ -501,6 +501,16 @@ figcaption {
     }
   }
 }
+
+// Resources Page Mobile-First
+
+#resources {
+  p {
+    text-align: center;
+  }
+}
+
+// Resources Page Desktop
 
 // Footer Mobile-First
 

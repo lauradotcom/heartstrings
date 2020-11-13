@@ -513,6 +513,10 @@ figcaption {
     grid-area: right;
   }
 }
+#resources p {
+  text-align: center;
+}
+
 footer {
   background-color: #140033;
   display: flex;
