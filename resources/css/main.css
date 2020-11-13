@@ -115,7 +115,7 @@ header {
 }
 
 h1 {
-  font-family: font-stack-headings;
+  font-family: "Tinos", serif;
   font-weight: 800;
   font-size: 2rem;
   text-align: center;
@@ -304,7 +304,7 @@ nav li a:active {
   color: #DDD9FF;
 }
 .dark a {
-  color: primary-lightest;
+  color: #DDD9FF;
 }
 
 .light {
@@ -331,53 +331,13 @@ figcaption {
 
 /* since it stacks automatically, not defining a grid for mobile or tablet */
 @media screen and (min-width: 1024px) {
-  #banner-instructor {
+  #banner-instructor, #banner-suzuki {
     height: 750px;
     background-position: top 25% right 10%;
     grid-area: banner;
   }
 
-  .intro {
-    grid-area: intro;
-    align-self: center;
-  }
-
-  .photo {
-    grid-area: photo;
-    display: none;
-  }
-
-  .text-1 {
-    grid-area: left1;
-    align-self: stretch;
-  }
-
-  .photo-1 {
-    grid-area: right1;
-    align-self: stretch;
-  }
-
-  .photo-2 {
-    grid-area: left2;
-    align-self: stretch;
-  }
-
-  .text-2 {
-    grid-area: right2;
-    align-self: stretch;
-  }
-
-  .text-3 {
-    grid-area: left3;
-    align-self: stretch;
-  }
-
-  .photo-3 {
-    grid-area: right3;
-    align-self: stretch;
-  }
-
-  main {
+  #instructor {
     display: grid;
     width: 100%;
     grid-template-areas: "banner banner" "intro intro" "photo photo" "left1 right1" "left2 right2" "left3 right3";
@@ -389,10 +349,100 @@ figcaption {
     align-content: center;
     grid-auto-flow: row;
   }
-
-  section {
+  #instructor section {
     display: grid;
     align-content: center;
+  }
+  #instructor .intro {
+    grid-area: intro;
+    align-self: center;
+  }
+  #instructor .photo {
+    grid-area: photo;
+    display: none;
+  }
+  #instructor .text-1 {
+    grid-area: left1;
+    align-self: stretch;
+  }
+  #instructor .photo-1 {
+    grid-area: right1;
+    align-self: stretch;
+  }
+  #instructor .photo-2 {
+    grid-area: left2;
+    align-self: stretch;
+  }
+  #instructor .text-2 {
+    grid-area: right2;
+    align-self: stretch;
+  }
+  #instructor .text-3 {
+    grid-area: left3;
+    align-self: stretch;
+  }
+  #instructor .photo-3 {
+    grid-area: right3;
+    align-self: stretch;
+  }
+}
+.block {
+  padding: 5% 2.5%;
+}
+
+@media screen and (min-width: 1024px) {
+  #suzuki {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "banner banner banner banner" "left1 left1 left1 right1" "left2 right2 right2 right2" "left3 left3 left3 right3" "more more more more";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 750px, repeat(4, minmax(500px, 1fr));
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: center;
+    grid-auto-flow: row;
+  }
+  #suzuki section {
+    display: grid;
+    align-content: center;
+  }
+  #suzuki .banner {
+    height: 750px;
+    background-position: top 25% right 10%;
+    grid-area: banner;
+  }
+  #suzuki .text-1 {
+    grid-area: left1;
+    align-self: stretch;
+  }
+  #suzuki .photo-1 {
+    grid-area: right1;
+    align-self: stretch;
+    background-color: #B6ADFF;
+  }
+  #suzuki .photo-2 {
+    grid-area: left2;
+    align-self: stretch;
+    background-color: #280069;
+  }
+  #suzuki .text-2 {
+    grid-area: right2;
+    align-self: stretch;
+  }
+  #suzuki .text-3 {
+    grid-area: left3;
+    align-self: stretch;
+  }
+  #suzuki .photo-3 {
+    grid-area: right3;
+    align-self: stretch;
+    background-color: #B6ADFF;
+  }
+  #suzuki .more {
+    grid-area: more;
+    align-self: stretch;
+    text-align: center;
   }
 }
 footer {
@@ -465,13 +515,15 @@ img {
   width: 100%;
 }
 
-figure img {
-  display: block;
-  overflow: hidden;
-  min-width: 500px;
-  min-height: 600px;
-  object-fit: cover;
-  object-position: 50% 50%;
+@media screen and (min-width: 1024px) {
+  figure img {
+    display: block;
+    overflow: hidden;
+    min-width: 500px;
+    min-height: 600px;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
