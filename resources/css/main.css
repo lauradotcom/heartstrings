@@ -523,6 +523,10 @@ figcaption {
     background-position: top 25% right 10%;
   }
 }
+#contact {
+  text-align: center;
+}
+
 footer {
   background-color: #140033;
   display: flex;
