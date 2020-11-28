@@ -517,6 +517,12 @@ figcaption {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  #resources .banner {
+    height: 750px;
+    background-position: top 25% right 10%;
+  }
+}
 footer {
   background-color: #140033;
   display: flex;
